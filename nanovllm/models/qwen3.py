@@ -56,7 +56,6 @@ class Qwen3Attention(nn.Module):
             rotary_dim=self.head_dim,
             max_position=max_position,
             base=rope_theta,
-            rope_scaling=rope_scaling,
         )
         self.attn = Attention(
             self.num_heads,
